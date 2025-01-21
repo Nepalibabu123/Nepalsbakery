@@ -7,7 +7,7 @@
   <title>Muffins - Nepal's Breads and Bakery</title>
   <link rel="stylesheet" href="styles.css">
 <style>
-   {
+    * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -19,13 +19,14 @@
       min-height: 100vh;
       display: flex;
       flex-direction: column;
-      background-image: url('bakery.jpg'); 
+      background-image: url('bakery.jpg');
       background-size: cover;
       background-position: center center;
+      background-attachment: fixed;
     }
 
     /* Header Section */
-   header {
+    header {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -48,24 +49,21 @@
       text-align: center;
     }
 
-
     /* Top Navigation and Back Button below the header */
     .top-nav {
       display: flex;
-      padding: 20px 80px;
+      justify-content: space-between;
+      padding: 20px 150px;
       background-color: rgba(0, 0, 0, 0.7);
       position: relative;
       z-index: 10;
       width: 100%;
-
     }
 
     .top-nav ul {
       list-style: none;
       display: flex;
       gap: 30px;
-margin: 0px 0px 0px 1500px;
-
     }
 
     .top-nav ul li {
@@ -77,13 +75,12 @@ margin: 0px 0px 0px 1500px;
       color: white;
       font-weight: bold;
       font-size: 15px;
-      text-align: right;
-   
     }
 
     .top-nav ul li a:hover {
       color: #FFD700;
     }
+
 
 
     main {
